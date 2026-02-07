@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Devarajan Krishna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --bg: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --white: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), #4f46e5);
+            color: white;
+            padding: 3rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .btn-home {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            backdrop-filter: blur(4px);
+            transition: background 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .btn-home:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        main {
+            padding: 3rem 2rem;
+        }
+
+        section {
+            margin-bottom: 3.5rem;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+        }
+
+        .intro {
+            font-size: 1.125rem;
+            color: var(--text-main);
+        }
+
+        .edu-item,
+        .project-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.25rem;
+        }
+
+        .item-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .item-date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .item-sub {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .highlight {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-card {
+            background: #f1f5f9;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--border);
+        }
+
+        .skill-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .skill-value {
+            font-weight: 600;
+        }
+
+        .pill-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+
+        .pill {
+            background: #e0e7ff;
+            color: #4338ca;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid var(--border);
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .contact-link:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 640px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.5rem;
+            }
+
+            .item-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Devarajan Krishna</h1>
+            <a href="index.html" class="btn-home">&larr; Back to Experience</a>
+        </header>
+
+        <main>
+            <!-- Profile -->
+            <section>
+                <h2>Profile</h2>
+                <p class="intro">
+                    Third-year B.Tech Electrical and Electronics Engineering student with a CGPA of 8.7.
+                    Strong interest in applied software development, logic building, and engineering problem-solving.
+                    Actively seeking opportunities to gain real-world industry exposure.
+                </p>
+            </section>
+
+            <!-- Education -->
+            <section>
+                <h2>Education</h2>
+                <div class="edu-item">
+                    <div class="item-header">
+                        <span class="item-title">B.Tech Electrical and Electronics Engineering</span>
+                        <span class="item-date">2023–2027</span>
+                    </div>
+                    <p class="item-sub">Manakula Vinayagar Institute of Technology, Puducherry</p>
+                    <p class="highlight">CGPA: 8.7 (till 4th semester)</p>
+                </div>
+
+                <div class="edu-item">
+                    <div class="item-header">
+                        <span class="item-title">Higher Secondary (HSC)</span>
+                        <span class="item-date">2023</span>
+                    </div>
+                    <p class="item-sub">Aditya Vidyashram Residential School</p>
+                    <p class="highlight">Percentage: 75.4%</p>
+                </div>
+            </section>
+
+            <!-- Technical Skills -->
+            <section>
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <p class="skill-label">Languages</p>
+                        <p class="skill-value">Python, C</p>
+                    </div>
+                    <div class="skill-card">
+                        <p class="skill-label">Database</p>
+                        <p class="skill-value">MySQL</p>
+                    </div>
+                    <div class="skill-card">
+                        <p class="skill-label">Tools</p>
+                        <p class="skill-value">Visual Studio Code</p>
+                    </div>
+                    <div class="skill-card">
+                        <p class="skill-label">Certification</p>
+                        <p class="skill-value">Kaggle Python</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section>
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <div class="item-title">WiFi-Controlled Missile Launching System</div>
+                    <p class="intro" style="margin: 0.5rem 0 1rem;">
+                        A WiFi-based embedded system designed to detect objects over a wide range and trigger controlled
+                        responses using Arduino UNO.
+                    </p>
+                    <div class="pill-group">
+                        <span class="pill">C Programming</span>
+                        <span class="pill">Arduino UNO</span>
+                        <span class="pill">WiFi Modules</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements -->
+            <section>
+                <h2>Achievements & Activities</h2>
+                <ul>
+                    <li>Secured <strong>First Prize</strong> in Poster Presentation at Ziggurant’25, Rajalakshmi
+                        Engineering College.</li>
+                    <li>Solved <strong>500+ programming problems</strong> on SkillRack.</li>
+                    <li>Organized and coordinated Paper Presentation and non-technical events during MITILENCE’25.</li>
+                    <li>Possess working knowledge of stock markets and personal financial planning.</li>
+                </ul>
+            </section>
+
+            <!-- Contact -->
+            <section>
+                <h2>Contact Information</h2>
+                <div class="contact-grid">
+                    <a href="https://github.com/Devaofficial-06" target="_blank" class="contact-link">
+                        GitHub: Devaofficial-06
+                    </a>
+                    <a href="mailto:devakrishnaofficial06@gmail.com" class="contact-link">
+                        devakrishnaofficial06@gmail.com
+                    </a>
+                    <div class="contact-link" style="pointer-events: none;">
+                        Phone: +91 93446 04328
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>

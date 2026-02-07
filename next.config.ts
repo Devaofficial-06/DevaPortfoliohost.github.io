@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/deva_animation_portfolio',
+  basePath: '/DevaPortfoliohost.github.io',
 };
 
 export default nextConfig;

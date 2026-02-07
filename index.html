@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devarajan Krishna | Animation Portfolio</title>
+    <meta name="description" content="Portfolio of Devarajan Krishna - Electrical and Electronics Engineering Student">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+        <p>Loading Experience...</p>
+    </div>
+
+    <div class="container" id="container">
+        <!-- Sticky Viewport -->
+        <div class="viewport">
+            <!-- Canvas for Animation -->
+            <canvas id="animation-canvas"></canvas>
+            
+            <!-- Dark Overlay -->
+            <div class="overlay"></div>
+
+            <!-- Content Layers -->
+            <div class="content-layer">
+                
+                <!-- Section 1: Intro -->
+                <div class="text-section" id="section-1">
+                    <h1>Devarajan Krishna</h1>
+                    <p class="subtitle">Third-year B.Tech Electrical and Electronics Engineering student with a CGPA of 8.7.</p>
+                    <p class="description">
+                        Strong interest in applied software development, logic building, and engineering problem-solving. <br>
+                        Actively seeking opportunities to gain real-world industry exposure.
+                    </p>
+                </div>
+
+                <!-- Section 2: Education -->
+                <div class="text-section" id="section-2">
+                    <h2 class="title-large">Academic Journey</h2>
+                    <div class="card-container">
+                        <div class="card glass">
+                            <h3>B.Tech in EEE (2023–2027)</h3>
+                            <p>Manakula Vinayagar Institute of Technology</p>
+                            <p class="stat">CGPA: 8.7</p>
+                        </div>
+                        <div class="card glass-subtle">
+                            <p>Higher Secondary (HSC)</p>
+                            <p>Aditya Vidyashram • 75.4%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Skills -->
+                <div class="text-section" id="section-3">
+                    <h2 class="title-large blue-glow">Skills & Innovation</h2>
+                    <div class="badge-grid">
+                        <span class="badge">Python & C</span>
+                        <span class="badge">MySQL</span>
+                        <span class="badge">VS Code</span>
+                        <span class="badge">Kaggle Cert</span>
+                    </div>
+                    <div class="project-card glass-featured">
+                        <span class="tag">Featured Project</span>
+                        <h3>WiFi-Controlled Missile Launcher</h3>
+                        <p>An embedded system using Arduino UNO and WiFi modules for long-range object detection and response triggering.</p>
+                    </div>
+                </div>
+
+                <!-- Section 4: Final Links -->
+                <div class="text-section" id="section-4">
+                    <h1 class="gradient-text">Let's Connect</h1>
+                    
+                    <div class="achievements">
+                        <p>🏆 First Prize in Poster Presentation @ Ziggurant’25</p>
+                        <p>💻 500+ Problems Solved on SkillRack</p>
+                        <p>📈 Stock Market & Personal Finance Knowledge</p>
+                    </div>
+
+                    <div class="button-group">
+                        <a href="about.html" class="btn btn-white">View Full Resume</a>
+                        <a href="https://github.com/Devaofficial-06" target="_blank" class="btn btn-outline">My GitHub</a>
+                    </div>
+
+                    <div class="contact-info">
+                        <a href="mailto:devakrishnaofficial06@gmail.com">devakrishnaofficial06@gmail.com</a>
+                        <p>+91 93446 04328</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div id="scroll-prompt" class="scroll-prompt">
+                <p>Scroll to Explore</p>
+                <div class="arrow"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
